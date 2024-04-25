@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="flex h-[100vh] items-center justify-center bg-body">
+    <div
+      class="relative flex h-[70px] w-[400px] items-center justify-center rounded-[10px] bg-white"
+    >
+      <div class="relative flex w-[350px]">
+        <div class="home group peer relative z-10 h-[70px] w-[70px]">
+          <a
+            href="#"
+            class="relative flex w-full flex-col items-center justify-center text-center font-[500]"
+          >
+            <label for="checkbox1" class="relative z-20 h-full w-full">
+              <input
+                type="radio"
+                checked
+                class="absolute hidden"
+                name="radio"
+                id="checkbox1"
+              />
+              <span
+                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+            </label>
+            <span
+              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              >Home</span
+            >
+          </a>
+        </div>
+        <div class="person group peer relative z-[1] h-[70px] w-[70px]">
+          <a
+            href="#"
+            class="relative flex w-full flex-col items-center justify-center text-center font-[500]"
+          >
+            <label for="checkbox2" class="relative z-20 h-full w-full">
+              <input
+                type="radio"
+                class="absolute hidden"
+                name="radio"
+                id="checkbox2"
+              />
+              <span
+                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+            </label>
+            <span
+              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              >Person</span
+            >
+          </a>
+        </div>
+        <div class="message group peer relative z-[1] h-[70px] w-[70px]">
+          <a
+            href="#"
+            class="relative flex w-full flex-col items-center justify-center text-center font-[500]"
+          >
+            <label for="checkbox3" class="relative z-20 h-full w-full">
+              <input
+                type="radio"
+                class="absolute hidden"
+                name="radio"
+                id="checkbox3"
+              />
+              <span
+                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+            </label>
+            <span
+              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              >Chat</span
+            >
+          </a>
+        </div>
+        <div class="image group peer relative z-[1] h-[70px] w-[70px]">
+          <a
+            href="#"
+            class="relative flex w-full flex-col items-center justify-center text-center font-[500]"
+          >
+            <label for="checkbox5" class="relative z-20 h-full w-full">
+              <input
+                type="radio"
+                class="absolute hidden"
+                name="radio"
+                id="checkbox5"
+              />
+              <span
+                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                ><ion-icon name="image-outline"></ion-icon
+              ></span>
+            </label>
+            <span
+              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              >Photos</span
+            >
+          </a>
+        </div>
+        <div class="settings group peer relative z-[1] h-[70px] w-[70px]">
+          <a
+            href="#"
+            class="relative flex w-full flex-col items-center justify-center text-center font-[500]"
+          >
+            <label for="bb" class="relative z-20 h-full w-full">
+              <input
+                type="radio"
+                class="absolute hidden"
+                name="radio"
+                id="bb"
+              />
+              <span
+                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+            </label>
+            <span
+              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              >Settings</span
+            >
+          </a>
+        </div>
+        <div
+          class="indicator absolute left-0 top-[-55%] h-[70px] w-[70px] rounded-[50%] border-[6px] border-solid border-body bg-[#29fd53] transition-all duration-500 before:absolute before:right-[-21px] before:top-[calc(50%+3px)] before:h-[20px] before:w-[1.25rem] before:rounded-tl-[20px] before:bg-transparent before:shadow-shadowIndicator before:content-[''] after:absolute after:left-[-21px] after:top-[calc(50%+3px)] after:h-[20px] after:w-[1.25rem] after:rounded-tr-[20px] after:bg-transparent after:shadow-shadowIndicator after:content-[''] peer-[.home]:peer-has-[:checked]:translate-x-[0px] peer-[.image]:peer-has-[:checked]:translate-x-[210px] peer-[.message]:peer-has-[:checked]:translate-x-[140px] peer-[.person]:peer-has-[:checked]:translate-x-[70px] peer-[.settings]:peer-has-[:checked]:translate-x-[280px]"
+        ></div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
