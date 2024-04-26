@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,9 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="flex h-[100vh] items-center justify-center bg-body">
+  <body
+    class="relative flex h-[100vh] items-center justify-center bg-white duration-200 dark:bg-black"
+  >
+    <div class="darkMode">
+      <label
+        for="darkMode"
+        class="absolute right-[40px] top-7 h-[40px] w-[120px] cursor-pointer rounded-lg bg-body transition-all duration-500 after:absolute after:left-0 after:h-full after:w-[40px] after:rounded-full after:border-2 after:border-solid after:border-white after:transition-all after:duration-500 after:content-[''] has-[:checked]:after:left-[calc(100%-40px)] dark:translate-x-[-50%] dark:bg-white dark:after:border-body"
+      >
+        <input type="checkbox" class="hidden" id="darkMode" />
+      </label>
+    </div>
     <div
-      class="relative flex h-[70px] w-[400px] items-center justify-center rounded-[10px] bg-white"
+      class="cont relative flex h-[70px] w-[400px] items-center justify-center rounded-[10px] bg-body dark:bg-white"
     >
       <div class="relative flex w-[350px]">
         <div class="home group peer relative z-10 h-[70px] w-[70px]">
@@ -26,12 +37,12 @@
                 id="checkbox1"
               />
               <span
-                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                class="relative block text-center text-[1.5rem] leading-[75px] text-white transition-all duration-500 group-has-[:checked]:translate-y-[-35px] dark:text-body"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
             </label>
             <span
-              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              class="absolute translate-y-[1.25rem] text-[15px] text-white opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100 dark:text-black"
               >Home</span
             >
           </a>
@@ -49,12 +60,12 @@
                 id="checkbox2"
               />
               <span
-                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                class="relative block text-center text-[1.5rem] leading-[75px] text-white transition-all duration-500 group-has-[:checked]:translate-y-[-35px] dark:text-body"
                 ><ion-icon name="person-outline"></ion-icon
               ></span>
             </label>
             <span
-              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              class="absolute translate-y-[1.25rem] text-[15px] text-white opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100 dark:text-black"
               >Person</span
             >
           </a>
@@ -72,12 +83,12 @@
                 id="checkbox3"
               />
               <span
-                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                class="relative block text-center text-[1.5rem] leading-[75px] text-white transition-all duration-500 group-has-[:checked]:translate-y-[-35px] dark:text-body"
                 ><ion-icon name="chatbubble-outline"></ion-icon
               ></span>
             </label>
             <span
-              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              class="absolute translate-y-[1.25rem] text-[15px] text-white opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100 dark:text-black"
               >Chat</span
             >
           </a>
@@ -95,12 +106,12 @@
                 id="checkbox5"
               />
               <span
-                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                class="relative block text-center text-[1.5rem] leading-[75px] text-white transition-all duration-500 group-has-[:checked]:translate-y-[-35px] dark:text-body"
                 ><ion-icon name="image-outline"></ion-icon
               ></span>
             </label>
             <span
-              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              class="absolute translate-y-[1.25rem] text-[15px] text-white opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100 dark:text-black"
               >Photos</span
             >
           </a>
@@ -118,18 +129,18 @@
                 id="bb"
               />
               <span
-                class="relative block text-center text-[1.5rem] leading-[75px] text-body transition-all duration-500 group-has-[:checked]:translate-y-[-35px]"
+                class="relative block text-center text-[1.5rem] leading-[75px] text-white transition-all duration-500 group-has-[:checked]:translate-y-[-35px] dark:text-body"
                 ><ion-icon name="settings-outline"></ion-icon
               ></span>
             </label>
             <span
-              class="absolute translate-y-[1.25rem] text-[15px] text-body opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100"
+              class="absolute translate-y-[1.25rem] text-[15px] text-white opacity-0 transition-all duration-500 group-has-[:checked]:translate-y-[5px] group-has-[:checked]:opacity-100 dark:text-black"
               >Settings</span
             >
           </a>
         </div>
         <div
-          class="indicator absolute left-0 top-[-55%] h-[70px] w-[70px] rounded-[50%] border-[6px] border-solid border-body bg-[#29fd53] transition-all duration-500 before:absolute before:right-[-21px] before:top-[calc(50%+3px)] before:h-[20px] before:w-[1.25rem] before:rounded-tl-[20px] before:bg-transparent before:shadow-shadowIndicator before:content-[''] after:absolute after:left-[-21px] after:top-[calc(50%+3px)] after:h-[20px] after:w-[1.25rem] after:rounded-tr-[20px] after:bg-transparent after:shadow-shadowIndicator after:content-[''] peer-[.home]:peer-has-[:checked]:translate-x-[0px] peer-[.image]:peer-has-[:checked]:translate-x-[210px] peer-[.message]:peer-has-[:checked]:translate-x-[140px] peer-[.person]:peer-has-[:checked]:translate-x-[70px] peer-[.settings]:peer-has-[:checked]:translate-x-[280px]"
+          class="indicator absolute left-0 top-[-55%] h-[70px] w-[70px] rounded-[50%] border-[6px] border-solid border-white bg-gradient-to-tr from-green-200 via-green-600  to-sky-600  transition-all duration-200 before:absolute before:right-[-20px] before:top-[calc(50%+4px)] before:h-[20px] before:w-[1.25rem] before:rounded-tl-[20px] before:bg-transparent before:shadow-shadowIndicatorlight before:duration-200 before:content-[''] after:absolute after:left-[-21px] after:top-[calc(50%+3px)] after:h-[20px] after:w-[1.25rem] after:rounded-tr-[20px] after:bg-transparent after:shadow-shadowIndicatorlight after:duration-200 after:content-[''] peer-[.home]:peer-has-[:checked]:translate-x-[0px] peer-[.image]:peer-has-[:checked]:translate-x-[210px] peer-[.message]:peer-has-[:checked]:translate-x-[140px] peer-[.person]:peer-has-[:checked]:translate-x-[70px] peer-[.settings]:peer-has-[:checked]:translate-x-[280px] dark:border-black dark:before:shadow-shadowIndicatorblack dark:after:shadow-shadowIndicatorblack"
         ></div>
       </div>
     </div>
